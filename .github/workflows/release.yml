@@ -1,14 +1,14 @@
 # This is a basic workflow to help you get started with Actions
 
-name: GHA QA
+name: GHA release
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "QA" ]
+    branches: [ "RELEASE_1.0.0" ]
   pull_request:
-    branches: [ "QA" ]
+    branches: [ "RELEASE_1.0.0" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world from QA!
+        run: echo Hello, world from RELEASE!
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
